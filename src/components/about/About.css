@@ -1,0 +1,17 @@
+
+.heading{
+  color: #067572;
+  border-radius: 50%;
+  background:white;
+  text-align: center;
+  height: 100px;
+  margin-top: 100px;
+  padding-top: 40px;
+}
+
+.aboutContainer:after{
+  clear:both;
+  display:table;
+  content:""
+
+}
