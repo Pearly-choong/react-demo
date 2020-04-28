@@ -9,9 +9,11 @@ class About extends React.Component{
       <div className="aboutContainer">
         <h1 className="heading">About</h1>
         <div className="pt-5">
-        <Para/>
+          <Para/>
         </div>
-        <Image/>
+        <div className="mb-5">
+          <Image/>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,10 @@
+.home, .about, .product {
+    border : none;
+    color : yellow;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+
+}
+
+

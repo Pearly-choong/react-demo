@@ -1,22 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Nav from './components/nav/Nav';
-import Product from './components/product/Product';
+import Landing from './Landing';
 
 
 ReactDOM.render(
-  <div className="container">
-    <div className="header pt-5">
-      <h1 className="h1"> React Demo Site  </h1>
-        <div className="buttons">
-          <Nav/>
-        </div>
-    </div>
-    <Home/>
-    <About/>
-    <Product/>
-  </div>,
+   <Landing/>,
    document.getElementById('root'));

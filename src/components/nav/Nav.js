@@ -4,20 +4,24 @@ import './Nav.css';
 import Home from '../home/Home';
 import About from '../about/About';
 import Product from '../product/Product';
+import Footer from '../footer/Footer';
 
 class Nav extends React.Component{
 
     home = ()=> {
       console.log('Home');
-      const homeSection = (
-        <div className="container">
-          <div className="header pt-5">
-            <h1 className="h1">React Demo Site</h1>
+      const homeSection = ( 
+        <div>     
+          <div className="header pt-5 bg-dark">
+            <h1 className="h1 text-center pb-4">React Demo Site</h1>
             <div className="buttons">
               <Nav/>
             </div>
           </div>
-          <Home/>
+          <div className="container">
+            <Home/>
+          </div>  
+          <Footer/>
        </div>
       )
 
@@ -27,14 +31,17 @@ class Nav extends React.Component{
    about = ()=> {
      console.log('About');
      const aboutSection = (
-     <div className="container">
-      <div className="header pt-5">
-        <h1 className="h1"> React Demo Site</h1>
-        <div className="buttons">
-          <Nav/>
+      <div>
+        <div className="header pt-5 bg-dark">
+          <h1 className="h1 text-center pb-4"> React Demo Site</h1>
+          <div className="buttons">
+            <Nav/>
+          </div>
         </div>
-      </div>
-      <About/>
+        <div className="container">
+          <About/>
+        </div>   
+        <Footer/>
      </div>
     )
      ReactDOM.render(aboutSection, document.getElementById('root'));
@@ -43,14 +50,17 @@ class Nav extends React.Component{
    product = ()=> {
      console.log('Product');
      const productSection = (
-     <div className="container">
-      <div className="header pt-5">
-        <h1 className="h1"> React Demo Site</h1>
-        <div className="buttons">
-          <Nav/>
+      <div>
+        <div className="header pt-5 bg-dark">
+          <h1 className="h1 text-center pb-4"> React Demo Site</h1>
+          <div className="buttons">
+            <Nav/>
+          </div>
         </div>
-      </div>
-      <Product/>
+        <div className="container">
+        <Product/>
+        </div>
+      <Footer/>
      </div>
      )
      ReactDOM.render(productSection, document.getElementById('root'));
@@ -59,9 +69,9 @@ class Nav extends React.Component{
     render(){
       return(
         <div>
-          <button className="home" onClick={this.home}> Home</button>
-          <button className="about" onClick={this.about}>About</button>
-          <button className="product" onClick={this.product}>Product</button>
+          <button className="home bg-dark" onClick={this.home}> Home</button>
+          <button className="about bg-dark" onClick={this.about}>About</button>
+          <button className="product bg-dark" onClick={this.product}>Product</button>
         </div>
       )
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Para.css';
 
+
 class Para extends React.Component{
   render(){
     return(
-      <p className="para">Lorem ipsum dolor sit amet, consectetur
+      <p className="para pl-5">Lorem ipsum dolor sit amet, consectetur
       adipisicing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis
@@ -20,5 +21,6 @@ class Para extends React.Component{
 
   }
 }
+
 
 export default Para;
